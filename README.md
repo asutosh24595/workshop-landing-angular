@@ -4,8 +4,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Screenshots
 
-![App Screenshot]("./assets/screenshot1.png")
-![App Screenshot]("./assets/screenshot2.png")
+<img width="1911" height="881" alt="screenshot1" src="https://github.com/user-attachments/assets/7f3dc3ee-10a0-4fa4-8992-0b377f2ee898" />
+<img width="1900" height="877" alt="screenshot2" src="https://github.com/user-attachments/assets/3458e39b-4acc-4397-aac4-b54b2b536e72" />
+
+
 
 ## Development server
 

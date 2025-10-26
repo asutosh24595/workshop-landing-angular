@@ -4,8 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Screenshots
 
-![App Screenshot]("./assets/my screenshot.png")
-![App Screenshot]("./assets/my screenshot.png")
+![App Screenshot]("./assets/screenshot1.png")
+![App Screenshot]("./assets/screenshot2.png")
 
 ## Development server
 

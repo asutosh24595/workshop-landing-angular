@@ -1,0 +1,17 @@
+<div class="flex">
+    <div *ngFor="let c of content" class="flex-none w-[32%] px-3 rounded-lg">
+      <div class="flex flex-col gap-y-2">
+        <img [src]="c.img" [alt]="c.title" class="w-full h-48 object-cover rounded-lg" />
+        <h1 class="text-sm font-medium mt-2">{{ c.title }}</h1>
+        <div class="flex items-center justify-between mt-1">
+          <h1 class="text-xl font-bold">${{ c.price }}</h1>
+          <div class="flex gap-x-1">
+            <ng-container *ngFor="let star of [0, 1, 2, 3, 4]">
+              <img [src]="c.star" alt="Star Rating" class="w-3.5 h-3.5" />
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,58 @@
+<div class="h-full flex flex-col gap-y-4">
+  <div
+  *ngFor="let content of mainContent"
+  class="h-full flex flex-col gap-y-1 mb-6"
+>
+  <div class="h-[85%] bg-white rounded-t-lg flex flex-col p-8">
+    <div class="flex flex-col gap-y-4 relative">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-x-4">
+          <img
+            src="{{ content.pfp }}"
+            alt="{{ content.name }}"
+            class="w-12 h-12"
+          />
+          <div class="flex flex-col">
+            <h2 class="text-lg font-bold">{{ content.name }}</h2>
+            <p class="text-sm text-gray-400">&#64;{{ content.username }}</p>
+          </div>
+        </div>
+          <app-menu-icon/>
+      </div>
+      <p class="text-sm">
+        {{ content.description }} <span class="text-red-400 hover:cursor-pointer">Read More</span>
+      </p>
+      <img src="{{ content.img }}" alt="{{ content.name }}" class="mb-2" />
+      <div class="absolute top-[33%] right-[5%]">
+        <img src="assets/emojis/heartWhite.svg" />
+      </div>
+    </div>
+  </div>
+  <div class="flex items-center gap-x-4 p-8 h-[15%] rounded-b-lg bg-white">
+    <div class="flex items-center gap-x-2 hover:cursor-pointer">
+      <img
+        src="assets/emojis/{{ content.emojis.emoji1 }}.svg"
+        alt="{{ content.emojis.emoji1 }} icon"
+      />
+      <p class="text-xl font-medium">{{ content.likes }}</p>
+    </div>
+    <div class="flex items-center gap-x-2 hover:cursor-pointer">
+      <img
+        src="assets/emojis/{{ content.emojis.emoji2 }}.svg"
+        alt="{{ content.emojis.emoji2 }} icon"
+      />
+      <p class="text-xl font-medium">{{ content.comments }}</p>
+    </div>
+    <div class="flex items-center gap-x-2 hover:cursor-pointer">
+      <img
+        src="assets/emojis/{{ content.emojis.emoji3 }}.svg"
+        alt="{{ content.emojis.emoji3 }} icon"
+      />
+      <p class="text-xl font-medium">{{ content.share }}</p>
+    </div>
+  </div>
+</div>
+<div class="flex items-center">
+  <app-lower-main class="flex h-auto overflow-x-auto mb-20 no-scrollbar"></app-lower-main>
+</div>
+</div>

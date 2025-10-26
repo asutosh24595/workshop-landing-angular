@@ -1,0 +1,25 @@
+<div class="flex items-start gap-x-6 mb-4">
+  <a
+    (click)="setActiveLink('artists')"
+    [ngClass]="{ 'font-extrabold text-black cursor-pointer': activeLink === 'artists', 'text-gray-500/60 font-medium cursor-pointer': activeLink === 'photographers'}"
+    >Artists</a
+  >
+  <a
+    (click)="setActiveLink('photographers')"
+    [ngClass]="{ 'font-extrabold text-black cursor-pointer': activeLink === 'photographers', 'text-gray-500/60 font-medium cursor-pointer': activeLink === 'artists'}"
+    >Photographers</a
+  >
+</div>
+<div class="w-full h-[93vh] overflow-y-auto no-scrollbar">
+  <div class="w-full h-auto rounded-lg">
+    <app-panel-cards *ngIf="activeLink === 'artists'"></app-panel-cards>
+    <app-photographers *ngIf="activeLink === 'photographers'"></app-photographers>
+  </div>
+</div>
+<div
+  class="flex items-center justify-between text-xs text-gray-400 font-medium p-2"
+>
+  <span><p>Privacy</p></span>
+  <span><p>Terms of Service</p></span>
+  <span><p>Cookie Notice</p></span>
+</div>
